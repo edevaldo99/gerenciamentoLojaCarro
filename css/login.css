@@ -1,0 +1,72 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+b{
+	font-weight: bold;
+}
+.centro{
+	width: 1200px;
+	margin: 0 auto;
+}
+.corpo-formulario{
+	margin: 180px auto;
+	width: 400px;
+}
+.corpo-formulario input{
+	display: block;
+	width: 100%;
+	border:1px solid #ccc;
+	padding: 15px;
+	box-sizing: border-box;
+	margin-top: 3px;
+	padding-left: 33px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	border-radius: 1px;
+	outline: none;
+}
+.corpo-formulario input:focus{
+	border: 1px solid #b2b2b2;
+}
+.corpo-formulario input[type=submit]{
+	width: 150px;
+	margin: 0 auto;
+	background: #ed5353;
+	border: 0;
+	color: #fff;
+	font-weight: 300;
+	padding: 7px 0;
+	border:1px solid #c63b3b;
+	cursor: pointer;
+	margin-top: 5px;
+}
+.corpo-formulario input[type=submit]:hover{
+	background: #ff4242;
+	transition: 0.2s ease-out;
+}
+.mensagem{
+	margin-top: 10px;
+}
+.mensagem span{
+	font-size: 12px;
+	letter-spacing: 0.4px;
+	padding: 5px;
+	display: block;
+	color: #fff;
+	font-weight: 300;
+}
+.mensagem.mensagem-sucesso{
+	border: 1px solid #145963;
+	background: #1c7f8e;
+}
+.mensagem.mensagem-erro{
+	background: #d64040;
+	border: 1px solid #841717;
+}
+.bloco-icone i{
+	position: absolute;
+	color: #aaa;
+	margin-top: 17px;
+	margin-left: 10px;
+}
