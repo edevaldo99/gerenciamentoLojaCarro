@@ -90,7 +90,7 @@ class Usuario{
 
 	public function loadAllUsers(){
 		$sql = new Sql();
-		$resultado = $sql->select("SELECT * FROM usuarios ORDER BY id DESC");
+		$resultado = $sql->select("SELECT * FROM usuarios");
 		return $resultado;
 	}
 

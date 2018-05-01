@@ -95,6 +95,7 @@ header{
 }
 .bloco:hover{
 	border-color: #e2e2e2;
+	transition: 0.3s;
 }
 .bloco .imagem{
 	width: 80px;

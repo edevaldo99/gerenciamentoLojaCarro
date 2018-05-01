@@ -37,73 +37,33 @@ if($autorizado == true){
 
 <div class="centro">
 	<div class="bloco-usuarios">
+
+		<?php
+
+		$admins = $user->loadAllUsers();
+
+		foreach ($admins as $key => $value) {
+
+		?>
+
 		<div class="bloco">
 			<div class="imagem">
 				<img src="img/avatar-user.png">
 			</div>
 			<div class="informacoes-usuario">
-				<h2>Edevaldo Mazzucco</h2>
-				<small>Administrador Geral</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
-			</div>
-		</div>
-		<div class="bloco">
-			<div class="imagem">
-				<img src="img/avatar-user.png">
-			</div>
-			<div class="informacoes-usuario">
-				<h2>Marcio Santos</h2>
-				<small>Administrador Geral</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
-			</div>
-		</div>
-		<div class="bloco">
-			<div class="imagem">
-				<img src="img/avatar-user.png">
-			</div>
-			<div class="informacoes-usuario">
-				<h2>Alessandra Fernandes</h2>
-				<small>Operador I</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
-			</div>
-		</div>
-		<div class="bloco">
-			<div class="imagem">
-				<img src="img/avatar-user.png">
-			</div>
-			<div class="informacoes-usuario">
-				<h2>Paulo Henrique Santos</h2>
-				<small>Operador I</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
-			</div>
-		</div>
-		<div class="bloco">
-			<div class="imagem">
-				<img src="img/avatar-user.png">
-			</div>
-			<div class="informacoes-usuario">
-				<h2>Alexandro Oliveira</h2>
-				<small>Operador I</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
-			</div>
-		</div>
-		<div class="bloco">
-			<div class="imagem">
-				<img src="img/avatar-user.png">
-			</div>
-			<div class="informacoes-usuario">
-				<h2>Ana Julia Herzen</h2>
-				<small>Estágiario(a)</small>
-				<a href="" class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
-				<a href="" class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
+				<h2><?php echo $value['nome'] ?></h2>
+				<small><?php echo $value['cargo'] ?></small>
+				<a href='informacoesUsuario.php?id=<?php echo $value['id'] ?>&&email=<?php echo $value['email'] ?>' class="btn-user-info"><i class="far fa-question-circle"></i> Informações</a>
+				<a href='editarUsuario.php?id=<?php echo $value['id'] ?>&&email=<?php echo $value['email'] ?>' class="btn-user-edit"><i class="fas fa-pencil-alt"></i> Editar</a>
 			</div>
 		</div>
 	</div>
+
+	<?php
+		}
+	?>
+
+
 </div>
 
 <?php  require_once("visual/rodape.php") ?>
