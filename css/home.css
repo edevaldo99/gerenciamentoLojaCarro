@@ -76,4 +76,75 @@ header{
 .menu ul li a:hover{
 	background: #3d3d3d;
 	transition: 0.2s;
+
+}
+
+
+
+
+
+
+
+.bloco{
+	width: 398px;
+	overflow: auto;
+	float: left;
+	border:1px solid #fff;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.bloco:hover{
+	border-color: #e2e2e2;
+}
+.bloco .imagem{
+	width: 80px;
+	float: left;
+}
+.bloco .imagem img{
+	height: 70px;
+}
+.bloco .informacoes-usuario{
+	float: left;
+}
+.bloco .informacoes-usuario h2{
+	font-size: 22px;
+	letter-spacing: 1px;
+	color: #1e1e1e;
+}
+.bloco .informacoes-usuario small{
+	color: #3d3d3d;
+	font-size: 12px;
+	font-weight: 300;
+	position: absolute;
+	margin-top: -2px;
+	letter-spacing: 0.1px;
+}
+.btn-user-info{
+	position: relative;
+	display: inline-block;
+	background-color: #0d6c84;
+	color: #fff;
+	padding: 5px 15px;
+	margin-top: 15px;
+	text-decoration: none;
+	font-weight: 300;
+	font-size: 12px;
+	border-radius: 2px;
+	border: 1px solid #085b70;
+}
+.btn-user-info:hover{
+	background-color: #09657c;
+}
+.btn-user-edit{
+	background: #db1818;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 5px 15px;
+	border-radius: 2px;
+	border: 1px solid #af0f0f;
+}
+.btn-user-edit:hover{
+	background-color: #f41d1d;
 }
