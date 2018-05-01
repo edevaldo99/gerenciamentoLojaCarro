@@ -12,7 +12,7 @@ footer{
 	font-size: 12px;
 	padding: 25px 0;
 	border-bottom: 2px solid #191919;
-	border-top: 2px solid #191919;
+	border-top: 1px solid #191919;
 }
 footer a{
 	color: #fff;
@@ -22,4 +22,58 @@ footer a{
 footer a:hover{
 	text-decoration: none;
 	cursor: pointer;
+}
+.centro{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.rodape-icones a i{
+	font-size: 21px;
+	color: #b7b7b7;
+	margin: 0 3px;
+	margin-top: 5px;
+}
+.rodape-icones a i:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+
+header{
+	background: #282828;
+	font-weight: 300;
+	color: fff;
+}
+.logo{
+	width: 25%;
+	float: left;
+	overflow: auto;
+}
+.menu{
+	width: 75%;
+	float: left;
+	overflow: auto;
+}
+.menu ul{
+	float: right;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 5px 10px;
+	display: inline-block;
+	padding: 25px 15px;
+}
+.menu ul li a:hover{
+	background: #3d3d3d;
+	transition: 0.2s;
 }
